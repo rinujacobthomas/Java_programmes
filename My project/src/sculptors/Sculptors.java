@@ -10,6 +10,11 @@ public class Sculptors {
 		Scanner s= new Scanner(System.in);
 	System.out.println("Enter the kgs of gold");	
 	int number=s.nextInt();
-	int total=number/5;
-	System.out.println("Number of Sculptors can be made is "+(total+number));
+	int total=number;
+	while(number>5)
+	{
+		number=number/5;
+		total=total+number;
+	}
+	System.out.println("Number of Sculptors can be made is "+total);
 }}
